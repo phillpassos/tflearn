@@ -142,10 +142,10 @@ class TermLogger(Callback):
     def on_batch_end(self, training_state, snapshot=False):
 
         training_state.step_time_total += time.time() - training_state.step_time
-        if snapshot:
-            self.snapshot_termlogs(training_state)
-        else:
-            self.print_termlogs(training_state)
+        #if snapshot:
+        #   self.snapshot_termlogs(training_state)
+        #else:
+        #   self.print_termlogs(training_state)
 
     def on_sub_batch_begin(self, training_state):
         pass
